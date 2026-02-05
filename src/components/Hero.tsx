@@ -152,8 +152,8 @@ export default function Hero() {
             asChild
           >
             <a
-              href="mailto:mufidaandi@gmail.com"
-              aria-label="Email Mufida at mufidaandi@gmail.com"
+              href="mailto:contact@heymufi.com"
+              aria-label="Email Mufida at contact@heymufi.com"
             >
               <Mail className="h-5 w-5" />
             </a>

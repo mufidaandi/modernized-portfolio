@@ -51,9 +51,9 @@ export default function Contact() {
   const contactLinks = [
     {
       name: "Email",
-      href: "mailto:mufidaandi@gmail.com",
+      href: "mailto:contact@heymufi.com",
       icon: Mail,
-      label: "mufidaandi@gmail.com",
+      label: "contact@heymufi.com",
       color: "hover:text-red-400",
     },
     {
@@ -312,7 +312,7 @@ export default function Contact() {
                     ? "Visit Mufida's GitHub profile at github.com/mufidaandi"
                     : link.name === "LinkedIn"
                       ? "Connect with Mufida on LinkedIn at linkedin.com/in/mufidaandi"
-                      : "Email Mufida at mufidaandi@gmail.com"
+                      : "Email Mufida at contact@heymufi.com"
                 }
               >
                 <link.icon className="h-5 w-5" />

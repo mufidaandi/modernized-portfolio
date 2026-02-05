@@ -276,8 +276,8 @@ export default function Navbar() {
             <motion.button
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/resume.pdf";
-                link.download = "Mufida_Resume.pdf";
+                link.href = "/Mufida_Resume_2026.pdf";
+                link.download = "Mufida_Resume_2026.pdf";
                 link.click();
               }}
               onMouseEnter={() => setHoveredItem("Resume")}

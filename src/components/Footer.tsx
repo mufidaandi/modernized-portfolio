@@ -20,7 +20,7 @@ export default function Footer() {
     },
     {
       name: "Email",
-      href: "mailto:mufidaandi@gmail.com",
+      href: "mailto:contact@heymufi.com",
       icon: Mail,
     },
   ];
@@ -70,7 +70,7 @@ export default function Footer() {
                     ? "Visit Mufida's GitHub profile"
                     : link.name === "LinkedIn"
                       ? "Connect with Mufida on LinkedIn"
-                      : "Email Mufida at mufidaandi@gmail.com"
+                      : "Email Mufida at contact@heymufi.com"
                 }
               >
                 <link.icon className="h-5 w-5" />
