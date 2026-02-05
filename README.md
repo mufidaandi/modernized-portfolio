@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+My personal portfolio built with Next.js. Clean, accessible, and modern.
 
-First, run the development server:
+## What's inside
+
+- **Hero section** with typing effect
+- **About** with skills grid
+- **Projects** showcase with image/video previews
+- **Contact form** connected to email API
+- **AI Chatbot** embedded (ask questions about me)
+- **WCAG 2.1 AA compliant** - keyboard nav, screen reader friendly, proper contrast
+
+## Tech stack
+
+- Next.js 16 (React)
+- Tailwind CSS v4
+- TypeScript
+- Framer Motion (animations)
+- Shadcn UI components
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── page.tsx           # Main page
+│   ├── layout.tsx         # Root layout with ChatBubble
+│   └── globals.css        # Tailwind config
+│
+├── components/
+│   ├── Hero.tsx           # Intro with typing effect
+│   ├── About.tsx          # Skills & background
+│   ├── Projects.tsx       # Project cards
+│   ├── Contact.tsx        # Contact form
+│   ├── ChatBubble.tsx     # AI chatbot widget
+│   └── ui/                # Reusable components
+│
+└── lib/
+    └── utils.ts           # Helper functions
+```
 
-## Learn More
+## Connected services
 
-To learn more about Next.js, take a look at the following resources:
+- **Email API** - Handles contact form
+- **Chatbot Backend** - Gemini AI chatbot
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+vercel
+```
 
-## Deploy on Vercel
+Update these in Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `NEXT_PUBLIC_CHATBOT_API_URL` - Your chatbot backend URL
+- Email API URL in Contact component (update API endpoint)
