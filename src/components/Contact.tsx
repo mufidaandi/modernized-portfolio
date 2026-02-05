@@ -282,8 +282,8 @@ export default function Contact() {
               className="font-mono hover:bg-primary/10"
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/resume.pdf";
-                link.download = "Mufida_Resume.pdf";
+                link.href = "/Mufida_Resume_2026.pdf";
+                link.download = "Mufida_Resume_2026.pdf";
                 link.click();
               }}
             >
