@@ -79,7 +79,9 @@ export default function Contact() {
     setErrorMessage("");
 
     try {
-      const response = await fetch("http://localhost:3001/api/send-email", {
+      const apiUrl =
+        process.env.NEXT_PUBLIC_EMAIL_API_URL || "http://localhost:3001";
+      const response = await fetch(`${apiUrl}/api/send-email`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
