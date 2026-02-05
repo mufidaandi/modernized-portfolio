@@ -37,9 +37,9 @@ const projects = [
       "Tailwind CSS",
       "Vite",
     ],
-    liveUrl: "", // Will be added after deployment
-    githubUrl: "https://github.com/mufidaandi", // Update with actual repo
-    image: "/projects/chatbot.png", // Add your chatbot screenshot
+    liveUrl: "https://chatbot.heymufi.com/",
+    githubUrl: "https://github.com/mufidaandi/mufi-chatbot",
+    image: "/projects/chatbot.png",
     videoUrl: "", // Can add demo video later
     featured: false,
     gradient: "from-purple-500 to-pink-500",
@@ -64,7 +64,7 @@ const projects = [
       "A robust backend service for handling contact form submissions with dual email provider support. Features Gmail SMTP integration, rate limiting, input validation, and automated confirmation emails for enhanced user experience.",
     tags: ["Node.js", "Express.js", "Nodemailer", "Gmail SMTP", "Vercel"],
     liveUrl: "#contact", // Links to contact section where it's used
-    githubUrl: "https://github.com/mufidaandi", // Update with actual repo
+    githubUrl: "https://github.com/mufidaandi/email-api", // Update with actual repo
     image: "/projects/email-api.png", // Add your screenshot
     videoUrl: "",
     featured: false,
