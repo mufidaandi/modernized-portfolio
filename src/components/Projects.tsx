@@ -355,7 +355,10 @@ export default function Projects() {
 
           {/* Show More/Less Button */}
           {projects.length > 5 && (
-            <motion.div variants={itemVariants} className="text-center mt-12">
+            <motion.div
+              variants={itemVariants}
+              className="text-center mt-12 mb-12"
+            >
               <Button
                 variant="outline"
                 size="lg"
