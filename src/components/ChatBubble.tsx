@@ -43,11 +43,11 @@ export default function ChatBubble() {
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const suggestions = [
+    "What's her QA and testing background?",
+    "Does she write automated tests?",
     "What is Mufida's tech stack?",
-    "Tell me about her experience",
     "What projects has she built?",
     "Is she available for work?",
-    "What's her accessibility expertise?",
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {

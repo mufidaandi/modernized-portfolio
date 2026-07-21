@@ -8,6 +8,21 @@ import { ChevronDown } from "lucide-react";
 
 const skillCategories = [
   {
+    title: "Test Automation & QA",
+    skills: [
+      "Playwright",
+      "API Testing",
+      "CI/CD (GitHub Actions)",
+      "Test Strategy & Planning",
+      "WCAG 2.1/2.2 & Section 508",
+      "Accessibility Testing",
+      "Screen Readers",
+      "Jira",
+      "TestRail",
+      "Cross-Browser Testing",
+    ],
+  },
+  {
     title: "Frontend",
     skills: [
       "React",
@@ -17,6 +32,7 @@ const skillCategories = [
       "HTML5",
       "CSS3",
       "Tailwind CSS",
+      "Responsive Design",
       "jQuery",
     ],
   },
@@ -31,16 +47,6 @@ const skillCategories = [
   {
     title: "Tools & Platforms",
     skills: ["Git", "GitHub", "Vercel", "VS Code"],
-  },
-  {
-    title: "Accessibility & QA",
-    skills: [
-      "WCAG 2.1/2.2",
-      "Section 508",
-      "Accessibility Testing",
-      "Screen Readers",
-      "Responsive Design",
-    ],
   },
 ];
 
@@ -107,8 +113,8 @@ export default function Skills() {
               }}
             />
             <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
-              A comprehensive toolkit for building modern, accessible, and
-              scalable web applications.
+              A toolkit built around testing software thoroughly — and
+              understanding the code well enough to know where it breaks.
             </p>
           </motion.div>
 
@@ -158,7 +164,12 @@ export default function Skills() {
               {"// Currently leveling up in"}
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {["Next.js 15", "PostgreSQL", "Prisma ORM", "TypeScript"].map(
+              {[
+                "Playwright",
+                "Test Strategy & Planning",
+                "CI/CD Pipelines",
+                "TypeScript",
+              ].map(
                 (tech) => (
                   <motion.div
                     key={tech}
@@ -180,21 +191,21 @@ export default function Skills() {
       <div
         onClick={() =>
           document
-            .getElementById("projects")
+            .getElementById("testing-approach")
             ?.scrollIntoView({ behavior: "smooth" })
         }
         onKeyDown={(e) => {
           if (e.key === "Enter" || e.key === " ") {
             e.preventDefault();
             document
-              .getElementById("projects")
+              .getElementById("testing-approach")
               ?.scrollIntoView({ behavior: "smooth" });
           }
         }}
         tabIndex={0}
         className="absolute bottom-0 left-0 w-full h-32 flex items-end justify-center pb-8 cursor-pointer hover:bg-gradient-to-t hover:from-primary/5 to-transparent transition-all duration-700 group z-20 focus:outline-none focus:ring-2 focus:ring-primary/50"
         role="button"
-        aria-label="Scroll to Projects section"
+        aria-label="Scroll to Testing Approach section"
       >
         <motion.div
           animate={{ y: [0, 5, 0] }}

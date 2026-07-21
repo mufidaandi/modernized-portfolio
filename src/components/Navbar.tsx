@@ -6,6 +6,7 @@ import {
   Home,
   User,
   Code,
+  TestTube2,
   Briefcase,
   Mail,
   FileDown,
@@ -18,6 +19,7 @@ const navItems = [
   { name: "Home", href: "#home", icon: Home },
   { name: "About", href: "#about", icon: User },
   { name: "Skills", href: "#skills", icon: Code },
+  { name: "Testing", href: "#testing-approach", icon: TestTube2 },
   { name: "Projects", href: "#projects", icon: Briefcase },
   { name: "Contact", href: "#contact", icon: Mail },
 ];

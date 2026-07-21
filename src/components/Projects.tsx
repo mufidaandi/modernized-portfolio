@@ -6,15 +6,45 @@ import { useRef, useState } from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, ChevronDown, Play, X } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  ChevronDown,
+  Play,
+  X,
+  TestTube2,
+} from "lucide-react";
 
-const projects = [
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  tags: string[];
+  liveUrl: string;
+  githubUrl: string;
+  image: string;
+  videoUrl: string;
+  featured: boolean;
+  gradient: string;
+  testingNote?: string;
+};
+
+const projects: Project[] = [
   {
     id: 1,
     title: "Expense Tracker with Gemini AI",
     description:
-      "A modern expense tracking app that uses Gemini AI to automatically categorize transactions and generate personalized financial insights. Features intelligent spending analysis and budget recommendations.",
-    tags: ["React", "Node.js", "MongoDB", "Gemini AI", "Express.js", "Vercel"],
+      "A full-stack expense tracking app that uses Gemini AI to categorize transactions and surface financial insights. Now backed by a 28-test Playwright suite — auth, CRUD, and dashboard flows, plus a separate read-only smoke suite for production — wired into CI with fixtures-based, collision-safe test data.",
+    tags: [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Gemini AI",
+      "Express.js",
+      "Playwright",
+      "CI/CD",
+      "Vercel",
+    ],
     liveUrl: "https://ai-financial-dashboard.vercel.app/",
     githubUrl: "https://github.com/mufidaandi/ai-financial-dashboard",
     image: "/projects/ExpenSure Screenshot.png", // Add your image to public/projects/
@@ -22,6 +52,8 @@ const projects = [
       "https://www.loom.com/embed/5c340b24201f46efba86850c25021fa1?sid=2aa885e8-3953-4a90-a96c-3ac7a143a22a", // Add your Loom embed URL here (e.g., "https://www.loom.com/embed/YOUR_VIDEO_ID")
     featured: true,
     gradient: "from-violet-500 to-purple-600",
+    testingNote:
+      "28 Playwright tests across auth, CRUD, and dashboard flows, plus a separate read-only smoke suite for production — run in CI on every push/pull request.",
   },
 
   {
@@ -61,14 +93,23 @@ const projects = [
     id: 4,
     title: "Email API Service",
     description:
-      "A robust backend service for handling contact form submissions with dual email provider support. Features Gmail SMTP integration, rate limiting, input validation, and automated confirmation emails for enhanced user experience.",
-    tags: ["Node.js", "Express.js", "Nodemailer", "Gmail SMTP", "Vercel"],
+      "A backend service handling contact form submissions with dual email-provider support — Gmail SMTP integration, rate limiting, input validation, and automated confirmation emails. Covered by a 12-test Playwright API suite (validation, rate-limit enforcement, error handling) that runs on a weekly schedule via GitHub Actions and can also be triggered on demand.",
+    tags: [
+      "Node.js",
+      "Express.js",
+      "Nodemailer",
+      "Gmail SMTP",
+      "Playwright",
+      "Vercel",
+    ],
     liveUrl: "#contact", // Links to contact section where it's used
     githubUrl: "https://github.com/mufidaandi/email-api", // Update with actual repo
     image: "/projects/email-api.png", // Add your screenshot
     videoUrl: "",
     featured: false,
     gradient: "from-cyan-500 to-blue-500",
+    testingNote:
+      "12 Playwright API tests covering validation, rate limiting, and error handling — scheduled weekly via GitHub Actions, plus on-demand runs.",
   },
   {
     id: 5,
@@ -158,7 +199,8 @@ export default function Projects() {
             />
             <p className="text-muted-foreground mt-6 max-w-2xl mx-auto">
               A selection of projects that showcase my skills in full-stack
-              development, UI/UX design, and problem-solving.
+              development and problem-solving — two of them with real
+              Playwright test suites and CI behind them.
             </p>
           </motion.div>
 
@@ -261,6 +303,16 @@ export default function Projects() {
                   >
                     {project.description}
                   </p>
+
+                  {/* Testing & CI Callout */}
+                  {project.testingNote && (
+                    <div className="mb-4 px-3 py-2 rounded-lg bg-primary/5 border border-primary/20 flex items-start gap-2">
+                      <TestTube2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                      <span className="text-xs font-mono text-muted-foreground">
+                        {project.testingNote}
+                      </span>
+                    </div>
+                  )}
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mb-6">
