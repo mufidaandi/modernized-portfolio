@@ -17,24 +17,26 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Mufida | Full Stack Developer",
+  title: "Mufida | QA Automation Engineer",
   description:
-    "Full Stack Developer passionate about building intelligent, accessible, and user-friendly web applications. Combining clean design with smart functionality.",
+    "QA Automation Engineer with a full stack development background. I write Playwright test suites, wire up CI pipelines, and run accessibility audits (WCAG/Section 508) — combining hands-on QA experience with the ability to read, write, and debug the code under test.",
   keywords: [
-    "Full Stack Developer",
-    "Web Developer",
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Accessibility",
+    "QA Automation Engineer",
+    "Test Automation",
+    "Playwright",
+    "CI/CD",
+    "Accessibility Testing",
     "WCAG",
-    "Software Engineer",
+    "Section 508",
+    "Software Testing",
+    "Full Stack Development",
+    "TypeScript",
   ],
   authors: [{ name: "Mufida" }],
   openGraph: {
-    title: "Mufida | Full Stack Developer",
+    title: "Mufida | QA Automation Engineer",
     description:
-      "Full Stack Developer passionate about building intelligent, accessible, and user-friendly web applications.",
+      "QA Automation Engineer with a full stack development background — building Playwright test suites and CI pipelines, backed by real accessibility audit experience.",
     type: "website",
   },
 };

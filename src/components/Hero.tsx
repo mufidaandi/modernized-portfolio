@@ -5,7 +5,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
-const titles = ["a full stack developer", "an accessibility QA"];
+const titles = [
+  "a QA automation engineer",
+  "an accessibility QA specialist",
+  "a full stack developer at heart",
+];
 
 const TypewriterEffect = ({ text }: { text: string }) => {
   const [displayText, setDisplayText] = useState("");
@@ -103,9 +107,11 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto mb-8 leading-relaxed"
         >
-          I thrive when I’m solving problems, writing clean code, and turning
-          ideas into something people can actually use. Even in accessibility
-          testing today, I still think like a builder.
+          I test software for a living — accessibility audits, manual QA, and
+          now automated coverage with Playwright. Coming up as a developer
+          first means I don’t just find bugs, I can read the source, write
+          the tests, and build the tooling that catches them before they
+          ship.
         </motion.p>
 
         {/* Social Links */}

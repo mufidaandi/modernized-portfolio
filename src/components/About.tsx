@@ -65,42 +65,102 @@ export default function About() {
               <p className="text-muted-foreground leading-relaxed text-lg">
                 Hi, I&apos;m{" "}
                 <span className="text-primary font-semibold">Mufida</span> — I
-                build things for the web and make sure everyone can use them.
+                test software to make sure it actually works, and I build
+                software to understand how it breaks.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Right now I&apos;m an{" "}
+                I&apos;m currently an{" "}
                 <span className="text-foreground font-medium">
-                  Accessibility Tester at NEOGOV
-                </span>
-                , auditing for WCAG and Section 508 compliance. But I code
-                whenever I have time because that&apos;s what I actually love
-                doing — solving problems and shipping features that work for
-                real people.
+                  Accessibility QA Analyst at NEOGOV
+                </span>{" "}
+                (~3 years), running WCAG 2.1/2.2 and Section 508 compliance
+                audits — DHS Trusted Tester certified — and tracking findings
+                in Jira and TestRail for a US-based product team.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                I graduated with{" "}
+                Before that I trained as a full stack developer —{" "}
                 <span className="text-foreground font-medium">
                   Dean&apos;s Honour
                 </span>{" "}
-                from Lambton College (Toronto) with hands-on experience in the
-                MERN stack. Since then I&apos;ve been teaching myself{" "}
-                <span className="text-primary">Next.js</span>,{" "}
-                <span className="text-primary">PostgreSQL</span>, and{" "}
-                <span className="text-primary">Prisma</span> — building stuff
-                like an AI chatbot (you can try it!), an expense tracker with
-                Gemini AI, and a Spring Boot financial dashboard.
+                grad of Lambton College&apos;s Full Stack Software Development
+                program — and I never stopped shipping code on the side.
+                That&apos;s exactly why I&apos;m moving into QA automation: I
+                don&apos;t just click through an app looking for bugs, I can
+                read the source, write{" "}
+                <span className="text-primary">Playwright</span> suites
+                against real APIs and UIs, and wire them into CI.
+              </p>
+
+              <p className="text-muted-foreground leading-relaxed">
+                Lately that&apos;s meant writing real Playwright test suites —
+                API tests, CRUD flows, auth flows, smoke tests — and hooking
+                them into GitHub Actions for two of my own projects, because I
+                wanted proof, not just a claim, that I can do this.
               </p>
 
               <p className="text-foreground font-medium italic border-l-4 border-primary pl-4 mt-8">
-                ✨ I don&apos;t just want to write code that works — I want to
-                build things people actually enjoy using.
+                ✨ I don&apos;t just want to find what&apos;s broken — I want
+                to understand it well enough to write the test that catches
+                it next time.
               </p>
             </motion.div>
 
             {/* Experience Cards */}
             <motion.div variants={itemVariants} className="space-y-6">
+              {/* QA Experience Card */}
+              <motion.div
+                whileHover={{ scale: 1.02, x: 5 }}
+                className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                    <Briefcase className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">
+                      Accessibility QA Analyst
+                    </h3>
+                    <p className="text-primary text-sm mb-1">NEOGOV</p>
+                    <p className="text-muted-foreground text-sm">
+                      ~3 years experience
+                    </p>
+                    <p className="text-muted-foreground text-xs mt-1">
+                      WCAG &amp; Section 508 Audits · Jira · TestRail · DHS
+                      Trusted Tester Certified
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Dev Experience Card */}
+              <motion.div
+                whileHover={{ scale: 1.02, x: 5 }}
+                className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
+                    <Briefcase className="h-6 w-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg">
+                      Software Developer
+                    </h3>
+                    <p className="text-primary text-sm mb-1">
+                      Previous Experience
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      2+ years experience
+                    </p>
+                    <p className="text-muted-foreground text-xs mt-1">
+                      Full Stack Development — the technical foundation behind
+                      my automation work
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+
               {/* Education Card 1 */}
               <motion.div
                 whileHover={{ scale: 1.02, x: 5 }}
@@ -144,56 +204,6 @@ export default function About() {
                       Computer Engineering
                     </p>
                     <p className="text-muted-foreground text-sm">Philippines</p>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Experience Card */}
-              <motion.div
-                whileHover={{ scale: 1.02, x: 5 }}
-                className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
-                    <Briefcase className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">
-                      Accessibility QA Tester
-                    </h3>
-                    <p className="text-primary text-sm mb-1">NEOGOV</p>
-                    <p className="text-muted-foreground text-sm">
-                      ~3 years experience
-                    </p>
-                    <p className="text-muted-foreground text-xs mt-1">
-                      Section 508 & WCAG Compliance Audits
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Dev Experience Card */}
-              <motion.div
-                whileHover={{ scale: 1.02, x: 5 }}
-                className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary">
-                    <Briefcase className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg">
-                      Software Developer
-                    </h3>
-                    <p className="text-primary text-sm mb-1">
-                      Previous Experience
-                    </p>
-                    <p className="text-muted-foreground text-sm">
-                      2+ years experience
-                    </p>
-                    <p className="text-muted-foreground text-xs mt-1">
-                      Full Stack Development
-                    </p>
                   </div>
                 </div>
               </motion.div>
