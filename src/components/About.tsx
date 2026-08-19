@@ -69,14 +69,13 @@ export default function About() {
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Right now I&apos;m an{" "}
+                Right now I&apos;m a{" "}
                 <span className="text-foreground font-medium">
-                  Accessibility Tester at NEOGOV
+                  Software Development Engineer at NEOGOV
                 </span>
-                , auditing for WCAG and Section 508 compliance. But I code
-                whenever I have time because that&apos;s what I actually love
-                doing — solving problems and shipping features that work for
-                real people.
+                , building scalable cloud-native applications with Java, Spring Boot, and Microservices. 
+                I focus on large backend systems using Java, Spring Boot, and PostgreSQL. 
+                I build microservices for HR tasks like hiring and onboarding.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
@@ -159,14 +158,14 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg">
-                      Accessibility QA Tester
+                      Software Development Engineer
                     </h3>
                     <p className="text-primary text-sm mb-1">NEOGOV</p>
                     <p className="text-muted-foreground text-sm">
                       ~3 years experience
                     </p>
                     <p className="text-muted-foreground text-xs mt-1">
-                      Section 508 & WCAG Compliance Audits
+                      Java • Spring Boot • Microservices • AWS/Azure • GenAI & RAG | Building Scalable Cloud-Native Applications
                     </p>
                   </div>
                 </div>

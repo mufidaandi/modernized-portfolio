@@ -22,7 +22,11 @@ export const metadata: Metadata = {
     "Full Stack Developer passionate about building intelligent, accessible, and user-friendly web applications. Combining clean design with smart functionality.",
   keywords: [
     "Full Stack Developer",
-    "Web Developer",
+    "Software Engineer",
+    "Java",
+    "Spring Boot",
+    "PostgreSQL",
+    "Prisma",
     "React",
     "Next.js",
     "TypeScript",

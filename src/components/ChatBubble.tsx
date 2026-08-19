@@ -47,7 +47,6 @@ export default function ChatBubble() {
     "Tell me about her experience",
     "What projects has she built?",
     "Is she available for work?",
-    "What's her accessibility expertise?",
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
